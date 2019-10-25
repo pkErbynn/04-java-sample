@@ -1,4 +1,4 @@
-package io.turntabl;
+package io.turntabl.library;
 
 import java.util.List;
 
