@@ -33,6 +33,7 @@ public class UniversityTestDrive {
 
         printStudents(students);
 
+
 //        filtering for first year students
         List<Student> firstYearStudents = new ArrayList<Student>();
         for (Student student:
@@ -44,8 +45,36 @@ public class UniversityTestDrive {
         printStudents(firstYearStudents);
 
         // creating or mounting or assigning a course to all first years....new Course()
-        Course IntroToProgrammingCourse = new Course( (new Lecturer("Prof Quainor", LecturerCourse.PROGRAMMING))  , firstYearStudents, CourseYear.FIRST );
+        Course IntroToProgrammingCourse = new Course(
+                (new Lecturer("Prof Quainor",
+                        LecturerCourse.PROGRAMMING)),
+                firstYearStudents,
+                CourseYear.FIRST
+        );
         System.out.println(IntroToProgrammingCourse);
+
+
+        // first and fourth year filter
+        List<Student> thirdAndFourthYearStudents = new ArrayList<Student>();
+        for (Student stu:
+             students) {
+            if( (stu.getStudentYear() == StudentYear.THIRD) && (stu.getStudentYear() == StudentYear.THIRD) ){   // lvalue is a field therefore no .fxn caller to StudentYear
+                thirdAndFourthYearStudents.add(stu);
+            }
+        }
+        printStudents(thirdAndFourthYearStudents);
+
+
+        // assigning all third and forth years to a course
+        Course AdvancedGardeningCourse = new Course(
+                (new Lecturer("Dr. Amanfo",
+                        LecturerCourse.GARDENING)),
+                thirdAndFourthYearStudents,
+                CourseYear.SECOND
+        );
+
+
+
     }
 
     private static void printStudents(List<Student> students) {
