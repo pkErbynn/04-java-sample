@@ -19,6 +19,10 @@ public class Student {
         return studentID;
     }
 
+    public StudentYear getStudentYear() {
+        return studentYear;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
