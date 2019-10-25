@@ -22,6 +22,15 @@ public class Course {
     public Course(Lecturer lecturer, List<Student> students, CourseYear courseYear) {
         this.lecturer = lecturer;
         this.students = students;
+        this.courseYear = courseYear;
+    }
 
+    @Override
+    public String toString() {
+        return "Course{" +
+                "lecturer=" + lecturer +
+                ", students=" + students +
+                ", courseYear=" + courseYear +
+                '}';
     }
 }

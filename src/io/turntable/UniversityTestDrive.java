@@ -43,7 +43,9 @@ public class UniversityTestDrive {
         }
         printStudents(firstYearStudents);
 
-
+        // creating or mounting or assigning a course to all first years....new Course()
+        Course IntroToProgrammingCourse = new Course( (new Lecturer("Prof Quainor", LecturerCourse.PROGRAMMING))  , firstYearStudents, CourseYear.FIRST );
+        System.out.println(IntroToProgrammingCourse);
     }
 
     private static void printStudents(List<Student> students) {
