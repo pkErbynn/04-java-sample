@@ -28,7 +28,8 @@ public class UniversityTestDrive {
                 new Student("Nab", 054, StudentYear.FIRST),
                 new Student("Suzzy", 022, StudentYear.SECOND),
                 new Student("Ibrahim", 033, StudentYear.FOURTH),
-                new Student("James", 0013, StudentYear.THIRD)
+                new Student("James", 0013, StudentYear.THIRD),
+                new Student("Tom", 0043, StudentYear.FOURTH)
         );
 
         printStudents(students);
@@ -64,7 +65,6 @@ public class UniversityTestDrive {
         }
         printStudents(thirdAndFourthYearStudents);
 
-
         // assigning all third and forth years to a course
         Course AdvancedGardeningCourse = new Course(
                 (new Lecturer("Dr. Amanfo",
@@ -74,6 +74,15 @@ public class UniversityTestDrive {
         );
 
 
+        // forth year filter
+        List<Student> fourthYearStudents = new ArrayList<Student>();
+        for (Student stu:
+             students) {
+            if(stu.getStudentYear() == StudentYear.FOURTH){
+                fourthYearStudents.add(stu);
+            }
+        }
+        printStudents(fourthYearStudents);
 
     }
 
