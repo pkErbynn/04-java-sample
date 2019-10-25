@@ -30,12 +30,18 @@ public class Main {
         }
         printBorrowers(premiumBorrowers);
 
-
+//        accessing only names field for premiumBorrowers
+        List<String> nameOfBorrowers = new ArrayList<>();
+        for (Borrower bwr:  // bwr is also an instance of Borrower
+             borrowers) {
+            nameOfBorrowers.add(bwr.getName()); // thus, can access the getName()
+        }
+        System.out.println(nameOfBorrowers);
 
     }
 
     private static void printBorrowers(List<Borrower> borrowers) {
         System.out.println(borrowers);
-        System.out.println("Lenght: " + borrowers.size());
+        System.out.println("Length: " + borrowers.size() + "\n");   // void fxns should mostly have and endl :)
     }
 }
