@@ -59,7 +59,7 @@ public class UniversityTestDrive {
         List<Student> thirdAndFourthYearStudents = new ArrayList<Student>();
         for (Student stu:
              students) {
-            if( (stu.getStudentYear() == StudentYear.THIRD) && (stu.getStudentYear() == StudentYear.THIRD) ){   // lvalue is a field therefore no .fxn caller to StudentYear
+            if( (stu.getStudentYear() == StudentYear.THIRD) || (stu.getStudentYear() == StudentYear.THIRD) ){   // lvalue is a field therefore no .fxn caller to StudentYear
                 thirdAndFourthYearStudents.add(stu);
             }
         }
@@ -83,6 +83,11 @@ public class UniversityTestDrive {
             }
         }
         printStudents(fourthYearStudents);
+
+
+        // fourth year stu with vowel names
+        List<Student> fourthYearStudentsWithVowelNames = new ArrayList<>();
+
 
     }
 
