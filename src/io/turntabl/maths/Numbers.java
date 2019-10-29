@@ -1,6 +1,7 @@
 package io.turntabl.maths;
 
 public class Numbers {
+
     public static int sum(int a, int b){
         int result = a + b;
         return result;
@@ -10,11 +11,19 @@ public class Numbers {
         if(a >= 0){
             return true;
         }
-        else return false;
+        return false;
+
     }
 
     public static boolean isNegative(int a){
         if(a < 0){
+            return true;
+        }
+        else return false;
+    }
+
+    public static boolean isEvenAndGreaterThanZero(int a){
+        if((a % 2 == 0)){
             return true;
         }
         else return false;
