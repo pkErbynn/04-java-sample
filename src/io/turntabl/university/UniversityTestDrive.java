@@ -87,6 +87,21 @@ public class UniversityTestDrive {
 
         // fourth year stu with vowel names
         List<Student> fourthYearStudentsWithVowelNames = new ArrayList<>();
+        for (Student stu:
+             students) {
+            if( (stu.getStudentYear() == StudentYear.FOURTH) && (stu.getName().matches("^[aeouAEOU].*")) ){
+                fourthYearStudentsWithVowelNames.add(stu);
+            }
+        }
+        printStudents(fourthYearStudentsWithVowelNames);
+
+        // creating a phy course for them
+        Course fourthYearPhysicsCourse = new Course(
+                (new Lecturer("Prof Pk Mensah",
+                            LecturerCourse.PHYSICS)),
+                fourthYearStudentsWithVowelNames,
+                CourseYear.FOURTH
+        );
 
 
 

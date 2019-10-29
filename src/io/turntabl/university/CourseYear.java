@@ -4,5 +4,5 @@ public enum CourseYear {
     FIRST,
     SECOND,
     THIRD,
-    FORTH,
+    FOURTH,
 }
