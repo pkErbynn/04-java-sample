@@ -8,7 +8,7 @@ public class Numbers {
     }
 
     public static boolean isPositive(int a){
-        if(a >= 0){
+        if(a > 0){
             return true;
         }
         return false;

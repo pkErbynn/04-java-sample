@@ -5,9 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class NumbersTest {
-
-
-
+//    for isPositive....analyzing all boundary values
     @Test
     void testIsPositiveNegative() {
         boolean result = Numbers.isPositive(-1);
@@ -20,14 +18,27 @@ class NumbersTest {
         assertFalse(result);
     }
 
+    // for isNegative
     @Test
-    void testIsNegative() {
+    void testIsNegativeZero() {
+        boolean result = Numbers.isNegative(0);
+        assertFalse(result);
     }
 
+    @Test
+    void testIsNegativeGreaterThanZero() {
+        boolean result = Numbers.isNegative(5);
+        assertFalse(result);
+    }
 
+    // for sum
     @Test
     void sum() {
+        int result = Numbers.sum(2, 3);
+        assertEquals(5, result);
     }
+
+
 
 
     @Test
