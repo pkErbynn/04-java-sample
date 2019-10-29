@@ -26,6 +26,11 @@
         </junit>
     </target>
 
+    <junitlauncher>
+<!--        <classpath refid="io.turntabl.maths.test.NumbersTest"/>-->
+        <test name="io.turntabl.maths.test.NumbersTest" haltOnFailure="true"/>
+    </junitlauncher>
+
     <target name="clean"
             description="clean up">
         <!-- Delete the ${build} and ${dist} directory trees -->
