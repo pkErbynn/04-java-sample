@@ -38,6 +38,19 @@ class NumbersTest {
         assertEquals(5, result);
     }
 
+    @Test
+    void sumAsMultiplication() {
+        int result = Numbers.sum(2, 3);
+        assertNotEquals(6, 5);
+    }
+
+    @Test
+    void sumAsDivision() {
+        int result = Numbers.sum(6, 3);
+        assertNotEquals(2, 9);
+    }
+
+
     // odd
     @Test
     void testIsEvenAndGreaterThanZeroOdd() {
