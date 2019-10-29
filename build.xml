@@ -20,6 +20,12 @@
         <javac srcdir="${src}" destdir="${build}"/>
     </target>
 
+    <target name="runjunit" depends="compile">
+        <junit>
+            <test name="io.turntabl.maths.test.NumbersTest"/>
+        </junit>
+    </target>
+
     <target name="clean"
             description="clean up">
         <!-- Delete the ${build} and ${dist} directory trees -->
