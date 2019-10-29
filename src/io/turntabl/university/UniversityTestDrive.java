@@ -89,6 +89,32 @@ public class UniversityTestDrive {
         List<Student> fourthYearStudentsWithVowelNames = new ArrayList<>();
 
 
+
+        /*
+        for (Student physicsCourseList: studentList){
+            if(physicsCourseList.getStudentsLevel() == StudentsLevel.FOURTH &&
+                    physicsCourseList.getStudentsName().matches("[aeiouAEIOU].*") ){
+                physicsCourse.add(physicsCourseList);
+            }
+        }
+        printNamesOfPhysicsStudent(physicsCourse);
+
+        List<String> physicsClass = new ArrayList<>();
+        for(Student pc : physicsCourse){
+            physicsClass.add(pc.getStudentsName());
+        }
+    }
+
+    private static void printNamesOfPhysicsStudent(List<Student> physicsCourse) {
+        System.out.println("physics students with names starting with vowel: " + physicsCourse);
+    }
+        */
+
+
+        /*
+        git branch management testing
+         */
+
     }
 
     private static void printStudents(List<Student> students) {
