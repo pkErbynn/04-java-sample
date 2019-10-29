@@ -8,7 +8,7 @@ class NumbersTest {
 //    for isPositive....analyzing all boundary values
     @Test
     void testIsPositiveNegative() {
-        boolean result = Numbers.isPositive(2);
+        boolean result = Numbers.isPositive(-1);
         assertFalse(result);
     }
 
