@@ -12,4 +12,13 @@ public class Numbers {
         }
         else return false;
     }
+
+    public static boolean isNegative(int a){
+        if(a < 0){
+            return true;
+        }
+        else return false;
+    }
+
+
 }
