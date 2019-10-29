@@ -15,7 +15,7 @@ class NumbersTest {
     @Test
     void testIsPositiveZero() {
         boolean result = Numbers.isPositive(0);
-        assertFalse(result);
+        assertTrue(result);
     }
 
     // for isNegative
