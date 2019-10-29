@@ -23,11 +23,13 @@ public class Numbers {
     }
 
     public static boolean isEvenAndGreaterThanZero(int a){
-        if((a % 2 == 0)){
+        if( (a > 0) && (a % 2 == 0)){
             return true;
         }
         else return false;
     }
+
+
 
 
 }

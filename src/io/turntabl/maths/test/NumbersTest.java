@@ -38,10 +38,16 @@ class NumbersTest {
         assertEquals(5, result);
     }
 
-
-
+    // odd
+    @Test
+    void testIsEvenAndGreaterThanZeroOdd() {
+        boolean result = Numbers.isEvenAndGreaterThanZero(3);
+        assertFalse(result);
+    }
 
     @Test
-    void testIsEvenAndGreaterThanZero() {
+    void testIsEvenAndGreaterThanZeroNegative() {
+        boolean result = Numbers.isEvenAndGreaterThanZero(-4);
+        assertFalse(result);
     }
 }
