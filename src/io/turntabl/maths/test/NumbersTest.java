@@ -14,8 +14,8 @@ class NumbersTest {
 
     @Test
     void testIsPositiveZero() {
-        boolean result = Numbers.isPositive(0);
-        assertTrue(result);
+        boolean result = Numbers.isPositive(4);
+        assertFalse(result);
     }
 
     // for isNegative
