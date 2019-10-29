@@ -20,16 +20,16 @@
         <javac srcdir="${src}" destdir="${build}"/>
     </target>
 
-    <target name="runjunit" depends="compile">
-        <junit>
-            <test name="io.turntabl.maths.test.NumbersTest"/>
-        </junit>
-    </target>
+<!--    <target name="runjunit" depends="compile">-->
+<!--        <junit>-->
+<!--            <test name="io.turntabl.maths.test.NumbersTest"/>-->
+<!--        </junit>-->
+<!--    </target>-->
 
-    <junitlauncher>
-<!--        <classpath refid="io.turntabl.maths.test.NumbersTest"/>-->
-        <test name="io.turntabl.maths.test.NumbersTest" haltOnFailure="true"/>
-    </junitlauncher>
+<!--    <junitlauncher>-->
+<!--&lt;!&ndash;        org.junit.jupiter.api.Test&ndash;&gt;-->
+<!--        <test name="io.turntabl.maths.test.NumbersTest" haltOnFailure="true"/>-->
+<!--    </junitlauncher>-->
 
     <target name="clean"
             description="clean up">
