@@ -5,4 +5,11 @@ public class Numbers {
         int result = a + b;
         return result;
     }
+
+    public static boolean isPositive(int a){
+        if(a >= 0){
+            return true;
+        }
+        else return false;
+    }
 }
