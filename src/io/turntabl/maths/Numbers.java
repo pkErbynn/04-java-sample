@@ -29,6 +29,25 @@ public class Numbers {
         else return false;
     }
 
+    public static boolean isALeapYear(int year) {
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 4 == 0) {
+                    System.out.println("leap year...yaaye\n");
+                    return true;
+                } else {
+                    System.out.println("not leap year...sheesh");
+                    return false;
+                }
+            } else {
+                System.out.println("leap year...tadaa");
+                return false;
+            }
+        } else {
+            System.out.println("not leap year...yikes! :(");
+            return false;
+        }
+    }
 
 
 
