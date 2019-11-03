@@ -65,6 +65,7 @@ public class UniversityTestDrive {
         }
         printStudents(thirdAndFourthYearStudents);
 
+
         // assigning all third and forth years to a course
         Course AdvancedGardeningCourse = new Course(
                 (new Lecturer("Dr. Amanfo",
@@ -72,6 +73,7 @@ public class UniversityTestDrive {
                 thirdAndFourthYearStudents,
                 CourseYear.SECOND
         );
+        System.out.println(AdvancedGardeningCourse);
 
 
         // forth year filter
@@ -102,28 +104,7 @@ public class UniversityTestDrive {
                 fourthYearStudentsWithVowelNames,
                 CourseYear.FOURTH
         );
-
-
-
-        /*
-        for (Student physicsCourseList: studentList){
-            if(physicsCourseList.getStudentsLevel() == StudentsLevel.FOURTH &&
-                    physicsCourseList.getStudentsName().matches("[aeiouAEIOU].*") ){
-                physicsCourse.add(physicsCourseList);
-            }
-        }
-        printNamesOfPhysicsStudent(physicsCourse);
-
-        List<String> physicsClass = new ArrayList<>();
-        for(Student pc : physicsCourse){
-            physicsClass.add(pc.getStudentsName());
-        }
-    }
-
-    private static void printNamesOfPhysicsStudent(List<Student> physicsCourse) {
-        System.out.println("physics students with names starting with vowel: " + physicsCourse);
-    }
-        */
+        System.out.println(fourthYearPhysicsCourse);
 
 
         /*
